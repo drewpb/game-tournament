@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}  <!-- Cargar archivos estáticos -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Detalles del Torneo</title>
+    <link rel="stylesheet" href="{% static 'catalog/styles.css' %}">
+</head>
+<body>
+<div class="container mt-3">
+        <!-- Verifica si el usuario está autenticado -->
+        {% if user.is_authenticated %}
+            <div class="d-flex justify-content-end">
+                <p class="lead username-text ">Bienvenido, {{ user.alias }}!</p>
+                <a href="{% url 'profile' %}" class="btn btn-login me-2">Perfil</a>
+                <a href="{% url 'logout' %}" class="btn btn-logout ms-3">Cerrar Sesión</a>
+            </div>
+        {% else %}
+            <div class="d-flex justify-content-end">
+                <a href="{% url 'login' %}" class="btn btn-login me-2">Iniciar Sesión</a>
+                <a href="{% url 'register' %}" class="btn btn-register">Registro</a>
+            </div>
+        {% endif %}
+  <div class="container mt-5">
+    {% block content %}
+    <div class="d-flex flex-column align-items-center py-4">
+      <div class="form-box">
+      <!-- Título del torneo -->
+      <h2 class="mb-4 tournament-title2">Perfil</h2>
+
+      <!-- Información del torneo -->
+      <div class="d-flex flex-column align-items-start bg-light p-4 mb-4 w-150 form-container justify-content-center">
+        <p><strong>Nombre:</strong> {{ user.nombre }}</p>
+          <p><strong>Alias:</strong> {{ user.alias }}</p>
+          <p><strong>Email:</strong> {{ user.email }}</p>
+          <p><strong>DNI:</strong> {{ user.dni }}</p>
+          <p><strong>Telefono:</strong> + {{ user.telefono }}</p>
+          <p><strong>Estadisticas:</strong> {{ user.estadisticas }}</p> <!-- Cuando lo actualice, añadir {{ user.estadisticas }} -->
+      </div>
+
+      </div>
+    </div>
+    {% endblock %}
+  </div>
+</body>
+</html>

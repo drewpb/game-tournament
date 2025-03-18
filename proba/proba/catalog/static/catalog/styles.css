@@ -1,0 +1,243 @@
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #032D17, #0A6542, #07492D, #001101);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #032D17, #0A6542, #07492D, #001101); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* claro a fuerte: 1-6 :: to top 5, 3, 4, 6 */
+    min-height: 100vh;  /* Asegurarte de que ocupa toda la pantalla */
+}
+
+.form-container {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #032D17, #0A6542, #07492D, #001101);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0A6542, #07492D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 3.5;
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #aef6de;               /* Color del texto */
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-container .form-group {
+    margin-bottom: 15px;
+}
+
+.form-container .btn-primary {
+    background-color: #110A6A;  /* Color de fondo */
+    color: #dfebc3;               /* Color del texto */
+    font-size: 30px;
+    border: 1px solid #0B0747;  /* Borde */
+    border-radius: 5px;         /* Bordes redondeados */
+    padding: 20px 30px;         /* Espaciado */
+    transition: background-color 0.3s ease; /* Suavizado de transición */
+}
+
+/* Estilo para el botón de iniciar sesión */
+.btn-login {
+    background-color: none;  /* Color de fondo */
+    color: #dfebc3;               /* Color del texto */
+    font-size: 21px;
+    border: 3px solid #0E8158;  /* Borde */
+    border-radius: 5px;         /* Bordes redondeados */
+    padding: 10px 20px;         /* Espaciado */
+    transition: background-color 0.3s ease; /* Suavizado de transición */
+}
+
+/* Estilo para hover (cuando el ratón pasa por encima) */
+.btn-login:hover {
+    background-color: #119D6E;
+    border-color: #032D17;
+    color: #032D17;               /* Color del texto */
+}
+/* Estilo para el botón de cerrar sesión */
+.btn-logout {
+    background-color: none;  /* Color de fondo */
+    color: red;               /* Color del texto */
+    font-size: 21px;
+    border: 3px solid red;  /* Borde */
+    border-radius: 5px;         /* Bordes redondeados */
+    padding: 10px 20px;         /* Espaciado */
+    transition: background-color 0.3s ease; /* Suavizado de transición */
+}
+
+/* Estilo para hover (cuando el ratón pasa por encima) */
+.btn-logout:hover {
+    background-color: red;
+    border-color: #032D17;
+    color: #032D17;               /* Color del texto */
+}
+.username-text {
+    color: #0E8158;
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    font-weight: none; /* Grosor de la fuente */
+    text-transform: none; /* Texto en mayúsculas u otras */
+    margin: 0.5rem 1em;
+}
+
+
+/* Estilo para el botón de registro */
+.btn-register {
+    background-color: #cd3d1b;  /* Color de fondo */
+    color: #dfebc3;               /* Color del texto */
+    font-size: 21px;
+    border: 1px solid #ba3718;  /* Borde */
+    border-radius: 5px;         /* Bordes redondeados */
+    padding: 10px 20px;         /* Espaciado */
+    transition: background-color 0.3s ease; /* Suavizado de transición */
+}
+
+/* Estilo para hover en botón de registro */
+.btn-register:hover {
+    background-color: #e97256;
+    border-color: #032D17;
+    color: #032D17;               /* Color del texto */
+}
+/* ========================= */
+/* Estilo para el botón de general */
+.btn-general {
+    background-color: #110A6A;  /* Color de fondo */
+    color: #dfebc3;               /* Color del texto */
+    font-size: 24px;
+    border: 1px solid #0B0747;  /* Borde */
+    border-radius: 5px;         /* Bordes redondeados */
+    padding: 10px 20px;         /* Espaciado */
+    transition: background-color 0.3s ease; /* Suavizado de transición */
+}
+
+/* Estilo para hover en botón de general */
+.btn-general:hover {
+    background-color: #746af1;
+    border-color: #4e555b;
+    color: #032D17;               /* Color del texto */
+}
+/* ========================= */
+
+.form-container .btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* El texto general en el index*/
+.tournament-text {
+    color: #dfebc3;
+    font-size: 2.0rem; /* Tamaño de la fuente */
+    font-weight: none; /* Grosor de la fuente */
+    text-transform: none; /* Texto en mayúsculas u otras */
+}
+
+/* El titulo de "Torneos destacados" en el index*/
+.tournament-title {
+    color: #dfebc3;
+    font-size: 2.5rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Grosor de la fuente */
+    text-transform: capitalize; /* Texto en mayúsculas u otras */
+}
+
+/* El titulo de "Torneos destacados" en el index*/
+.tournament-title2 {
+    color: #dfebc3;
+    font-size: 2.5rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Grosor de la fuente */
+    text-transform: uppercase; /* Texto en mayúsculas u otras */
+}
+
+/* Para el estilo de cada torneo que aparece en "Torneos destacados" del index */
+.tournament-card {
+    background-color: #e3a305; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 1px; /* Espaciado interno */
+    transition: transform 0.3s ease; /* Transición para hover */
+}
+
+.tournament-card:hover {
+    transform: translateY(-10px); /* Efecto al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+}
+
+.tournament-card .card-title {
+    text-transform: uppercase; /* Texto en mayúsculas u otras */
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold; /* Grosor de la fuente */
+    color: #07492D;
+}
+
+.tournament-card .card-text {
+    font-size: 1rem;
+    color: #07492D;
+}
+
+/* Botón "Ver Detalles" */
+.tournament-card .btn-primary {
+    background-color: #110A6A;  /* Color de fondo */
+    color: #dfebc3;               /* Color del texto */
+    border: 1px solid #0B0747;  /* Borde */
+    transition: background-color 0.3s ease;
+}
+
+.tournament-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* El titulo de login y register*/
+.log-reg-title {
+    color: #dfebc3;
+    font-size: 2rem; /* Tamaño de la fuente */
+    font-weight: none; /* Grosor de la fuente */
+    text-transform: capitalize; /* Texto en mayúsculas u otras */
+}
+
+/* Necesarios para la parte de "Animate a jugar"*/
+.features {
+    background-color: #032D17; /* Fondo oscuro */
+    opacity: 2.5;
+    color: #fff; /* Texto blanco */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+.features .feature-item {
+    padding: 20px;
+}
+
+.features h2 {
+    color: #dfebc3;
+    font-size: 2.0rem;
+}
+
+.features h4 {
+    color: #5dee78; /* Color del título */
+    font-size: 1.25rem;
+}
+
+.features p {
+    color: #dfebc3; /* Color de texto */
+}
+
+.feature-icon {
+    width: 120px;
+    height: 120px;
+}
+
+.btn-primary {
+    background-color: #f75a5a;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+    background-color: #e64c4c;
+    border: none;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 3px solid #5dee78;
+}

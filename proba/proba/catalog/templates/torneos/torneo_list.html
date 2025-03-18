@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}  <!-- Cargar archivos estáticos -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Detalles del Torneo</title>
+    <link rel="stylesheet" href="{% static 'catalog/styles.css' %}">
+</head>
+<body>
+  <div class="container mt-5">
+    {% block content %}
+      <h2>Listado de Torneos</h2>
+      <ul>
+        {% for torneo in torneos %}
+          <li>
+            <a href="{% url 'torneo_detail' torneo.pk %}">{{ torneo.nombre }}</a>
+            - Estado: {{ torneo.get_estado_display }}
+          </li>
+        {% empty %}
+          <li>No hay torneos disponibles.</li>
+        {% endfor %}
+      </ul>
+    {% endblock %}
+  </div>
+</body>
+</html>

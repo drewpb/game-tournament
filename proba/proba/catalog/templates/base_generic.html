@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}  <!-- Cargar archivos estáticos -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incluir tu archivo CSS -->
+    <link rel="stylesheet" href="{% static 'catalog/styles.css' %}">
+    <title>{% block title %}Torneos{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1 class="tournament-title">Gestión de Torneos de Videojuegos</h1>
+        <nav>
+            <a href="{% url 'torneo_list' %}">Torneos</a>
+            <a href="{% url 'jugador_list' %}">Jugadores</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Plataforma de Torneos</p>
+    </footer>
+</body>
+</html>
