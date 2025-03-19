@@ -1,8 +1,6 @@
-from django.urls import path, include
-from .views import index, profile_view, custom_logout_view, logeo, registro, RegisterView, TorneoListView, TorneoDetailView, TorneoCreateView, TorneoRegisterView, JugadorListView, JugadorDetailView
-from django.contrib.auth import views as auth_views  # Para los logeos y registros
+from django.urls import path
+from .views import index, profile_view, logeo, registro, TorneoListView, TorneoDetailView, TorneoCreateView, TorneoRegisterView, JugadorListView, JugadorDetailView
 from . import views
-from django.contrib import admin
 
 # Para las imagenes:
 from django.conf import settings
