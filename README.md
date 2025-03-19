@@ -1,4 +1,4 @@
-#🎮 Tournament Management Web App
+# 🎮 Tournament Management Web App
 
 ##This is a Django-based web application for managing video game tournaments, created as part of a Tokio School Python course.
 
