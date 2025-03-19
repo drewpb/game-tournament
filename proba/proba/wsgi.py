@@ -14,6 +14,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "proba1.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "proba.settings")
 
 application = get_wsgi_application()

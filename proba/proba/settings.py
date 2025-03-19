@@ -57,7 +57,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "proba1.urls"
+ROOT_URLCONF = "proba.urls"
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "proba1.wsgi.application"
+WSGI_APPLICATION = "proba.wsgi.application"
 
 
 # Database

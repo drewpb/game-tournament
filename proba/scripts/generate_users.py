@@ -1,6 +1,6 @@
 from faker import Faker
 import random
-from proba1.catalog.models import Jugador  # Ajusta la ruta según tu estructura
+from proba.catalog.models import Usuario # Ajusta la ruta según tu estructura
 from django.db import IntegrityError  # Para manejar errores de integridad (violaciones de UNIQUE)
 
 fake = Faker()
@@ -35,7 +35,7 @@ while usuarios_creados < total_usuarios:
         }
 
         # Intentar crear el usuario
-        jugador = Jugador(
+        jugador = Usuario(
             nombre=nombre,
             email=email,
             dni=dni,
